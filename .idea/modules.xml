@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Curso-Nelio-Alves.iml" filepath="$PROJECT_DIR$/Curso-Nelio-Alves.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data-hora/Data-hora.iml" filepath="$PROJECT_DIR$/Data-hora/Data-hora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enum-Combination/Enum-Combination.iml" filepath="$PROJECT_DIR$/Enum-Combination/Enum-Combination.iml" />
       <module fileurl="file://$PROJECT_DIR$/Estudos-28-02/Estudos-28-02.iml" filepath="$PROJECT_DIR$/Estudos-28-02/Estudos-28-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExerciciosFixacao/ExerciciosFixacao.iml" filepath="$PROJECT_DIR$/ExerciciosFixacao/ExerciciosFixacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/Memoria-Vetores-Listas/Memoria-Vetores-Listas.iml" filepath="$PROJECT_DIR$/Memoria-Vetores-Listas/Memoria-Vetores-Listas.iml" />
