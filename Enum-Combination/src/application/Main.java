@@ -47,7 +47,7 @@ public class Main {
         for(int i=1; i<=n; i++){
             System.out.println("Enter contract #" + i + " data: ");
             System.out.print("Date (DD/MM/YYYY): ");
-            Date contractDate = String.valueOf(sc.next());
+            Date contractDate = sc.nextDate();
             System.out.print("Value per hour: ");
             double valuePerHour = sc.nextDouble();
             System.out.print("Duration (hours): ");
