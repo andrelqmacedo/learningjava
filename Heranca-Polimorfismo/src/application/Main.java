@@ -53,6 +53,16 @@ public class Main {
         acc101.withdraw(200.0);
         System.out.println(acc101.getAccountBalance());
 
+        //Polimorfismo - Em programação orientada a objetos, polimorfismo é o princípio pelo qual duas ou mais classes derivadas da mesma superclasse podem invocar métodos que têm a mesma assinatura, mas comportamentos distintos
+        Account x = new Account(121212, "Andre", 1000.0);
+        Account y = new SavingsAccount(131313, "Luciana", 1000.0, 0.001);
+
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+
+        System.out.println(x.getAccountBalance());
+        System.out.println(y.getAccountBalance());
+
     }
 
 }
