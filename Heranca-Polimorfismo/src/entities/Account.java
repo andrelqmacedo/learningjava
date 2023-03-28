@@ -36,7 +36,7 @@ public class Account {
 
     public void withdraw(double amount) {
         if (accountBalance > amount) {
-            accountBalance -= amount;
+            accountBalance -= amount + 5.0;
         }
     }
     public void deposit (double amount){

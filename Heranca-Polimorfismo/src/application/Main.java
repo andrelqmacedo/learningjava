@@ -39,6 +39,20 @@ public class Main {
             System.out.println("Update!");
         }
 
+
+        //Sobreposição do método withdraw()
+        Account acc99 = new Account(10101, "Alex", 1000.00);
+        acc99.withdraw(200.0);
+        System.out.println(acc99.getAccountBalance());
+
+        Account acc100 = new SavingsAccount(11313, "Maria", 1000.0, 0.01);
+        acc100.withdraw(200.0);
+        System.out.println(acc100.getAccountBalance());
+
+        Account acc101 = new BusinessAccount(10223, "Bob", 1000.0, 500.0);
+        acc101.withdraw(200.0);
+        System.out.println(acc101.getAccountBalance());
+
     }
 
 }
