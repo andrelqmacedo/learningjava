@@ -1,47 +1,51 @@
 package application;
 
-import entities.Employee;
-import entities.OutsourcedEmployee;
+import entities.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        System.out.print("Enter the number of employees: ");
+        System.out.print("Enter the number of products: ");
         int n = sc.nextInt();
 
-        List<Employee> empregados = new ArrayList<>();
+        List<Product> produtos = new ArrayList<>();
 
         for(int i = 0; i<n; i++){
-            System.out.print("Employee #" + (i+1) + " data: ");
-            System.out.print("Outsourced (y/n)? ");
+            System.out.print("Product #" + (i+1) + " data: ");
+            System.out.print("Common, user or impoted? (c/u/i)? ");
             char ch = sc.next().charAt(0);
             System.out.print("Name: ");
             sc.nextLine();
             String name = sc.nextLine();
-            System.out.print("Hours: ");
-            Integer hours = sc.nextInt();
-            System.out.print("Value per hour: ");
-            double valuePerHour = sc.nextDouble();
-            if(ch == 'y') {
-                System.out.print("Additional charge: ");
-                double additionalCharge = sc.nextDouble();
-                empregados.add(new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge));
+            System.out.print("Price: ");
+            Double price = sc.nextDouble();
+            if(ch == 'u') {
+                System.out.print("Manufacture date (DD/MM/YYYY): ");
+                LocalDate manufactureDate = LocalDate.parse(sc.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+                produtos.add(new UsedProduct(name, price, manufactureDate));
+            }
+            else if (ch == 'i'){
+                System.out.print("Customs fee: ");
+                Double customsFee = sc.nextDouble();
+                produtos.add(new ImportedProduct(name, price, customsFee));
             }
             else{
-                empregados.add(new Employee(name, hours, valuePerHour));
+                produtos.add(new Product(name, price));
             }
         }
         System.out.println();
-        System.out.println("PAYMENTS: ");
-        for(Employee e : empregados){
-            System.out.println(e.getName() + " - $ " + String.format("%.2f", e.payment()));
+        System.out.println("PRICE TAGS: ");
+        for(Product p : produtos){
+            System.out.println(p.priceTag());
         }
         sc.close();
     }
