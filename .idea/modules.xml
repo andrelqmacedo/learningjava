@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Classes-e-Metodos-Abstratos/Classes-e-Metodos-Abstratos.iml" filepath="$PROJECT_DIR$/Classes-e-Metodos-Abstratos/Classes-e-Metodos-Abstratos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Curso-Nelio-Alves.iml" filepath="$PROJECT_DIR$/Curso-Nelio-Alves.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data-hora/Data-hora.iml" filepath="$PROJECT_DIR$/Data-hora/Data-hora.iml" />
       <module fileurl="file://$PROJECT_DIR$/Enum-Combination/Enum-Combination.iml" filepath="$PROJECT_DIR$/Enum-Combination/Enum-Combination.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercicio-Combinacao/Estudos-28-02.iml" filepath="$PROJECT_DIR$/Exercicio-Combinacao/Estudos-28-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Heranca-Polimorfismo/Exercicio-Polimorfismo/Exercicio-Polimorfismo.iml" filepath="$PROJECT_DIR$/Heranca-Polimorfismo/Exercicio-Polimorfismo/Exercicio-Polimorfismo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Classes-e-Metodos-Abstratos/Exercicios-Fixacao/Exercicios-Fixacao.iml" filepath="$PROJECT_DIR$/Classes-e-Metodos-Abstratos/Exercicios-Fixacao/Exercicios-Fixacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExerciciosFixacao/ExerciciosFixacao.iml" filepath="$PROJECT_DIR$/ExerciciosFixacao/ExerciciosFixacao.iml" />
       <module fileurl="file://$PROJECT_DIR$/Heranca-Polimorfismo/Heranca-Polimorfismo.iml" filepath="$PROJECT_DIR$/Heranca-Polimorfismo/Heranca-Polimorfismo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Memoria-Vetores-Listas/Memoria-Vetores-Listas.iml" filepath="$PROJECT_DIR$/Memoria-Vetores-Listas/Memoria-Vetores-Listas.iml" />
